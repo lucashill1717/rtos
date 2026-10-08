@@ -12,6 +12,8 @@ set(PROJECT_SOURCES
     Sources/main.c
     Sources/syscalls.c
     Sources/sysmem.c
+
+	Sources/Drivers/Src/
 )
 
 set(PROJECT_DEFINES
@@ -27,8 +29,6 @@ add_executable(${PROJECT_NAME}
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/Include
     ${CMAKE_CURRENT_SOURCE_DIR}/STM32F4xx_HAL_Driver/Inc
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/Include
-    ${CMAKE_CURRENT_SOURCE_DIR}/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 )
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE

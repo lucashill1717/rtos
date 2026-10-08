@@ -3,7 +3,6 @@
 
 #include "stm32f4xx.h"
 #include "system_stm32f4xx.c"
-#include "stm32f4xx_ll_usart.h"
 
 #define BIT_IS_SET(Reg, Bit) ((Reg) & (Bit))
 
