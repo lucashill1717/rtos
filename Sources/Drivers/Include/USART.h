@@ -1,6 +1,14 @@
-#ifndef SOURCES_DRIVERS_INCLUDE_USART_H_
-#define SOURCES_DRIVERS_INCLUDE_USART_H_
+#ifndef _USART_H_
+#define _USART_H_
+
+#include <stdint.h>
+
+#include "DriversHelper.h"
+#include "stm32f4xx.h"
+
 
 #define USART2_OVER8_DIVISOR 16
 
-#endif /* SOURCES_DRIVERS_INCLUDE_USART_H_ */
+void USART2_Init(uint32_t baud_rate);
+
+#endif /* _USART_H_ */
