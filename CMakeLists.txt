@@ -12,6 +12,8 @@ set(PROJECT_SOURCES
     Sources/main.c
     Sources/syscalls.c
 
+	Sources/Drivers/Src/DMA.c
+	Sources/Drivers/Src/GPIO.c
 	Sources/Drivers/Src/USART.c
 )
 

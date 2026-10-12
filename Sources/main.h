@@ -4,6 +4,8 @@
 #include "stm32f4xx.h"
 #include "system_stm32f4xx.c"
 
+#include "DMA.h"
+#include "GPIO.h"
 #include "USART.h"
 
 #define SCB_CPACR  (*(volatile uint32_t *)0xE000ED88)
