@@ -11,7 +11,6 @@ set(PROJECT_SOURCES
 
     Sources/main.c
     Sources/syscalls.c
-    Sources/sysmem.c
 
 	Sources/Drivers/Src/USART.c
 )

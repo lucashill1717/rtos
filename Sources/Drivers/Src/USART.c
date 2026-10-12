@@ -8,11 +8,6 @@ void USART2_IRQHandler(void) {
 
 	if (BIT_IS_SET(USART2->SR, 1 << 7)) {  // TXEIE
 		// clear through write to DR
-		USART2->DR = transmit_string[transmit_string_itr++];
-		if (transmit_string_itr > 12)
-		{
-			transmit_string_itr = 0;
-		}
 	}
 
 	if (BIT_IS_SET(USART2->SR, 1 << 6)) {  // TCIE
