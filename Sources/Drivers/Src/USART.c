@@ -2,15 +2,15 @@
 
 
 void USART2_IRQHandler(void) {
-	if (BIT_IS_SET(USART2->SR, 1 << 5)) {  // RXNEIE
+	if (READ_BIT(USART2->SR, 1 << 5)) {  // RXNEIE
 		// clear through read from DR
 	}
 
-	if (BIT_IS_SET(USART2->SR, 1 << 7)) {  // TXEIE
+	if (READ_BIT(USART2->SR, 1 << 7)) {  // TXEIE
 		// clear through write to DR
 	}
 
-	if (BIT_IS_SET(USART2->SR, 1 << 6)) {  // TCIE
+	if (READ_BIT(USART2->SR, 1 << 6)) {  // TCIE
 		// not sure yet, can be cleared by software
 		CLEAR_BIT(USART2->SR, 1 << 6);
 	}
